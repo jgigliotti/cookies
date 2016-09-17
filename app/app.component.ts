@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
 
+import { Login } from './login/login.component';
+
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+    selector: 'cookies-app',
+    template: `<router-outlet></router-outlet>`
 })
+
 export class AppComponent { }

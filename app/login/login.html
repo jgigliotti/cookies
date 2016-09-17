@@ -1,0 +1,17 @@
+<div class="header">
+    <h1> Login Here </h1>
+</div>
+<div class="error-banner" [hidden]="showError">{{errorMessage}}</div>
+<div class="form">
+    <div class="credentials">
+        <label class="username"> Username
+            <input [(ngModel)]="username"/>
+        </label>
+        <label class="password"> Password
+            <input [(ngModel)]="password"/>
+        </label>
+    </div>
+    <div class="submit">
+        <button (click)=login()> Submit </button>
+    </div>
+</div>
