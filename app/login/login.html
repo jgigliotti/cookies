@@ -1,17 +1,17 @@
-<div class="header">
-    <h1> Login Here </h1>
-</div>
-<div class="error-banner" [hidden]="showError">{{errorMessage}}</div>
-<div class="form">
-    <div class="credentials">
-        <label class="username"> Username
-            <input [(ngModel)]="username"/>
-        </label>
-        <label class="password"> Password
-            <input [(ngModel)]="password"/>
-        </label>
-    </div>
-    <div class="submit">
-        <button (click)=login()> Submit </button>
+<div class="login-card center-block">
+    <div class=login-logo></div>
+    <div class="form">
+        <div class="col-md-12 credentials">
+            <div class="row error-banner" [class.hide-me]="showError">{{errorMessage}}</div>
+            <div class="row username">
+                <input placeholder="Username" [(ngModel)]="username"/>
+            </div>
+            <div class="row password">
+                <input type="password" placeholder="Password" [(ngModel)]="password"/>
+            </div>
+        </div>
+        <div class="login">
+            <button type="button" class="btn btn-primary active" (click)=login()> Login </button>
+        </div>
     </div>
 </div>

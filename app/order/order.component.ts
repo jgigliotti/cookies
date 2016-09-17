@@ -6,6 +6,7 @@ import { AuthenticationService } from '../util/authentication.service'
 @Component({
     moduleId: module.id,
     selector: 'order',
+    styleUrls: ['order.css'],
     templateUrl: 'order.html',
     providers: [ AuthenticationService ]
 })

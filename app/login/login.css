@@ -1,0 +1,39 @@
+.login-card {
+    margin-top: 5%;
+    width: 205px;
+    height: 320px;
+    text-align: center;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1), 0 7px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-card .login-logo {
+    height: 150px;
+    width: 205px;
+    background: white url('./app/img/monster-blue.svg') center no-repeat;
+    background-size: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-position-y: 6px;
+}
+
+.credentials {
+    padding-bottom: 10px;
+}
+
+.credentials .row {
+    padding: 10px 0;
+}
+
+.credentials .error-banner {
+    color: red;
+    padding: 0;
+}
+
+.login-card .login .btn {
+    background-color: #0473BB;
+    border-color: black;
+}
+
+.hide-me {
+    visibility: hidden;
+}
