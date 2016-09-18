@@ -15,9 +15,8 @@ export class AuthenticationService {
         if(foundUser && foundUser.password === password) {
             localStorage.setItem('loggedInUser', username);
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     deauthenticateUser(): void {
