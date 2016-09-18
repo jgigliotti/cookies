@@ -1,17 +1,15 @@
 <div class="login-card center-block">
     <div class=login-logo></div>
-    <div class="form">
-        <div class="col-md-12 credentials">
-            <div class="row error-banner" [class.hide-me]="showError">{{errorMessage}}</div>
-            <div class="row username">
-                <input placeholder="cookie" [(ngModel)]="username"/>
-            </div>
-            <div class="row password">
-                <input type="password" placeholder="monster" [(ngModel)]="password"/>
-            </div>
+    <div class="credentials">
+        <div class="row error-banner" [class.hide-me]="showError">{{errorMessage}}</div>
+        <div class="row username">
+            <input placeholder="cookie" [(ngModel)]="username" />
         </div>
-        <div class="login">
-            <button type="button" class="btn btn-primary active" (click)=login()> Login </button>
+        <div class="row password">
+            <input type="password" placeholder="monster" [(ngModel)]="password" />
         </div>
+    </div>
+    <div class="login">
+        <button type="button" class="btn btn-primary active" (click)=login()> Login </button>
     </div>
 </div>
