@@ -1,9 +1,5 @@
-.logout {
-    right: 0;
-    top: 0;
-    position: absolute;
-    padding: 5px 20px;
-    text-align: right;
-    color: black;
-    cursor: pointer;
+.order-card {
+    margin: 35px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 0 16px 0 rgba(0, 0, 0, 0.25);
 }

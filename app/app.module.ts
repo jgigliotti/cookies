@@ -6,11 +6,11 @@ import { AppComponent }  from './app.component';
 import { routing }  from './app.routing';
 
 import { Login } from './login/login.component';
-import { Order } from './order/order.component';
+import { Orders } from './orders/orders.component';
 
 @NgModule({
   imports: [ BrowserModule, FormsModule, routing ],
-  declarations: [ AppComponent, Login, Order ],
+  declarations: [ AppComponent, Login, Orders ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

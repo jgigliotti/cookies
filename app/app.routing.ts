@@ -2,7 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { Login } from './login/login.component';
-import { Order } from './order/order.component';
+import { Orders } from './orders/orders.component';
 
 const routes: Routes = [
   { 
@@ -10,7 +10,7 @@ const routes: Routes = [
       data: { title: 'Order Cookies: Login'} 
   },
   { 
-      path: 'order', component: Order,
+      path: 'orders', component: Orders,
       data: { title: 'Order Cookies'} 
   }
 ];

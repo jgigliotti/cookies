@@ -21,13 +21,13 @@ export class Login implements OnInit {
 
     ngOnInit() { 
         if(this._authService.authenticatedUser()) {
-            this._router.navigate(['order']);
+            this._router.navigate(['orders']);
         }
     }
 
     login(): void {
         if(this._authService.authenticateUser(this.username, this.password)) {
-            this._router.navigate(['order']);
+            this._router.navigate(['orders']);
         } else {
             this.showError = false;
         }
