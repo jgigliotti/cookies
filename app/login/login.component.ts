@@ -12,9 +12,9 @@ import { AuthenticationService } from '../util/authentication.service';
 })
 export class Login implements OnInit {
     @Output() private errorMessage: string = 'Invalid Credentials.';
+    private showError: boolean = true;
     private username: string;
     private password: string;
-    private showError: boolean = true;
 
     constructor(private _authService: AuthenticationService,
                 private _router: Router) { }
