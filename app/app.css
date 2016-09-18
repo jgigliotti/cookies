@@ -1,0 +1,13 @@
+.banner {
+    text-align: center; 
+    color: #0473BB
+}
+.logout {
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 5px 20px;
+    text-align: right;
+    color: black;
+    cursor: pointer;
+}
