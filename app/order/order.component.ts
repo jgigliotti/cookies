@@ -19,4 +19,9 @@ export class Order implements OnInit {
             this._router.navigate(['']);
         }
      }
+
+     logout() {
+         this._authService.deauthenticateUser();
+         this._router.navigate(['']);
+     }
 }
