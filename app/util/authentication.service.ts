@@ -6,7 +6,7 @@ export class AuthenticationService {
 
     constructor() { }
 
-    isAUserAuthenticated(): string | null {
+    authenticatedUser(): string | null {
         return localStorage.getItem('loggedInUser');
     }
 

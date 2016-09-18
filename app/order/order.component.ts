@@ -15,7 +15,7 @@ export class Order implements OnInit {
                 private _router: Router) { }
 
     ngOnInit() {
-        if(!this._authService.isAUserAuthenticated()) {
+        if(!this._authService.authenticatedUser()) {
             this._router.navigate(['']);
         }
      }
