@@ -3,7 +3,7 @@
     <div class="credentials">
         <div class="row error-banner" [class.hide-me]="showError">{{errorMessage}}</div>
         <div class="row username">
-            <input placeholder="cookie" [(ngModel)]="username" />
+            <input placeholder="cookie" (input)="username = $event.target.value" />
         </div>
         <div class="row password">
             <input type="password" placeholder="monster" [(ngModel)]="password" />
