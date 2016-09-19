@@ -1,0 +1,58 @@
+.orders ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.new-order {
+    width: 500px;
+    margin-top:35px;
+    border: solid #0473BB 1px;
+    padding: 15px;
+    background-color: #fafdff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 0 16px 0 rgba(0, 0, 0, 0.25)
+}
+.new-order .header {
+    text-align: center;
+}
+.new-order .details {
+    height: 185px;
+}
+
+.new-order .detail {
+    padding: 5px;
+    height: 50px;
+}
+
+.new-order .detail label,
+.new-order .detail input,
+.new-order .detail select,
+.new-order .detail textarea {
+    display: block;
+}
+
+.new-order .detail.rush.type label,
+.new-order .detail.rush.type input {
+    display: inline-block;
+}
+
+.new-order .detail.type select {
+    width: 150px;
+}
+
+.new-order .detail.rush label.rush {
+    margin-left: 20px;
+} 
+
+.new-order .detail.name input,
+.new-order .detail.special textarea {
+    width: 100%;
+}
+
+.pending-orders {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.submit {
+    text-align: right;
+}

@@ -1,5 +1,43 @@
 .order-card {
-    margin: 35px;
-    text-align: center;
+    width: 400px;
+    margin-top: 35px;
+    text-align: left;
+    padding: 0;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0), 0 0 16px 0 rgba(0, 0, 0, 0.25);
 }
+
+h3 {
+    color: #0473BB;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h3, h4 {
+    font-weight: bold
+}
+
+p {
+    font-size: 16px;
+    overflow-wrap: break-word;
+}
+
+.order-card .order-name {
+    height: 55px;
+    padding:15px;
+    background-color: #92aec1;
+}
+
+.order-card .order-details {
+    padding: 15px;
+}
+
+.delete {
+    padding:0 15px 15px 15px;
+    text-align: right;
+}
+
+.order-card .delete-button {
+    background-color: #f76464;
+}
+
