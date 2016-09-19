@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
+import { CookieOrder } from '../util/util.service';
 
 @Component({
     moduleId: module.id,
@@ -6,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['order.css'],
     templateUrl: 'order.html'
 })
-export class Order implements OnInit {
+export class Order {
+    @Input() order: CookieOrder;
+    @Input() types: string[];
+    @Output() delete = new EventEmitter<CookieOrder>();
+
     constructor() { }
 
-    ngOnInit() { }
+    deleteOrder() {
+        this.delete.emit(this.order);
+    }
 }

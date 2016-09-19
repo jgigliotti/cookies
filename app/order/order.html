@@ -1,5 +1,19 @@
-<div class="order-card center-block .container-fluid">
-    <div class="header row ">header</div>
-    <div class="body row">body</div>
-    <div class="footer row">footer</div>
+<div class="order-card center-block container">
+    <div class="order-name">
+        <h3> {{order.name}} </h3>
+    </div>
+    <div class="order-details">
+        <div class="order-type">
+            <h4> Type: </h4> <p> {{order.type}} </p>
+        </div>
+        <div class="order-priority">
+            <h4> Priority </h4> <p> {{ order.rush ? 'Rush' : 'Standard' }} </p>
+        </div>
+        <div class="order-special">
+            <h4> Special Instructions </h4> <p> {{order.specialInstructions}} </p>
+        </div> 
+    </div>
+    <div class="delete">
+        <button type="button" class="btn btn-primary active delete-button" (click)="deleteOrder()"> Delete </button>
+    </div>
 </div>

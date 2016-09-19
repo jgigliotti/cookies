@@ -1,6 +1,40 @@
-
 <div class="orders">
-    <ul>
-        <li class="order" *ngFor="let order of orders"></li>
-    </ul>
+    <div class="new-order center-block">
+        <div class="header">
+            <h2>Cookie Order</h2>
+        </div>
+        <div class="details">
+            <div class="detail name">
+                <label> Order Name 
+                    <input type="text" [(ngModel)]="newOrder.name">
+                </label>
+            </div>
+            <div class="detail rush type">
+                <label> Type
+                    <select [(ngModel)]="newOrder.type">
+                        <option *ngFor="let type of cookieTypes" [value]="type">{{type}}</option>
+                    </select>
+                </label>
+                <label class="rush"> Rush
+                    <input type="checkbox" [(ngModel)]="newOrder.rush">
+                </label>
+            </div>
+            <div class="detail special">
+                <label> Special Instructions
+                    <textarea [(ngModel)]="newOrder.specialInstructions" ></textarea>
+                </label>
+            </div>
+        </div> 
+        <div class="submit">
+                <button type="button" class="btn btn-primary active delete-button" (click)="addOrder(newOrder)" [disabled]="canAdd()"> Submit </button>
+        </div>
+    </div>
+    <div class="pending-orders">
+        <h3> Pending Orders </h3>
+        <ul>
+            <li class="Delete" *ngFor="let order of orders">
+                <order [order]="order" [types]="cookieTypes" (delete)="delOrder(order)"></order>
+            </li>
+        </ul>
+    </div>
 </div>

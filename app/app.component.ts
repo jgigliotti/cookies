@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs/Rx';
 
 import { AuthenticationService } from './util/authentication.service';
 import { Login } from './login/login.component';
